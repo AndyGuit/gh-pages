@@ -1,1 +1,1 @@
-https://andyguit.github.io/rsschool-cv/cv
+https://andyguit.github.io/gh-pages/cv
