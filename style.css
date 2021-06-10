@@ -4,15 +4,105 @@
   box-sizing: border-box;
 }
 
+a,
+a:visited {
+  color: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  margin: 0;
+}
+
+ul {
+  padding-left: 1em;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+}
+
+.wrapper {
+  display: flex;
+  height: 90vh;
+}
+
 aside {
   width: 25%;
+  background-color: #393e46;
+  color: #eeeeee;
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+}
+
+aside > section > h3 {
+  text-transform: uppercase;
 }
 
 .image {
   width: 100%;
+  min-width: 70px;
   border-radius: 50%;
 }
 
 main {
   width: 75%;
+  background-color: #eeeeee;
+  padding: 1.5em;
+  color: #222831;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+h1 {
+  font-size: 3em;
+}
+
+footer {
+  background-color: #00adb5;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 10vh;
+}
+
+.rsschool-img {
+  width: 30%;
+}
+
+.github-img {
+  width: 70%;
+}
+
+@media (max-width: 700px) {
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  h1 {
+    font-size: 2em;
+  }
+  h3 {
+    font-size: 1em;
+  }
+  aside,
+  main {
+    padding: 0.3em;
+  }
+  main {
+    width: 70%;
+  }
+  aside {
+    width: 30%;
+    justify-content: space-around;
+  }
 }
